@@ -60,6 +60,50 @@ function activitat4(){
     printResult(majorsEdat)
 }
 
+/******EXERCICI 5******/
+
+const notes = [7, 9, 5, 10, 8];
+
+
+// Utilitza reduce per calcular la mitjana
+// Imprimeix el resultat
+
+function activitat5(){
+    const suma = notes.reduce((acumulador, nota) => acumulador + nota, 0);
+    const mitjana = suma / notes.length;
+    printResult(mitjana);
+}
+
+
+
+/******EXERCICI 6******/
+
+// Escriu la funció per crear l'objecte producte
+// Exemple de sortida: { nom: "Portàtil", preu: 950, quantitat: 3 }
+
+function activitat6(nomProducte, preuProducte, quantitatProducte){
+    let preuFinal=preuProducte
+    let producte={nom:nomProducte,preu:preuFinal,quantitat:quantitatProducte}
+    printResult(JSON.stringify(producte))
+}
+
+/******EXERCICI 7******/
+
+const cotxe = {
+    marca: 'Tesla',
+    model: 'Model S',
+    preu: 80000
+};
+// Afegeix la propietat 'any' aquí
+// Imprimeix l'objecte actualitzat
+
+
+function activitat7(){
+    cotxe.any=2023;
+    printResult(JSON.stringify(cotxe))
+}
+
+
 /******FUNCIONS DOM******/
 
 function printResult(result){
